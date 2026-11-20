@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://raoedits.netlify.app/sitemap.xml
