@@ -1,7 +1,20 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>RAO EDITS</title>
+<!DOCTYPE html>
+<html lang="en" data-mode="light" data-size="normal" data-ur="on" data-previews="on">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data: blob:; base-uri 'none'; form-action 'none'; connect-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>RAO EDITS - Photo Editing Prompts, CapCut &amp; Canva Tutorials</title>
+<meta name="description" content="Free photo editing prompts, CapCut and Canva tutorials, and a cartoon lab. English with Roman Urdu.">
+<link rel="canonical" href="https://raoedits.netlify.app/">
+<meta name="theme-color" content="#2A0F3D">
+<meta property="og:title" content="RAO EDITS">
+<meta property="og:description" content="Free photo editing prompts, CapCut and Canva tutorials, and a cartoon lab.">
+<meta property="og:url" content="https://raoedits.netlify.app/">
+<meta property="og:type" content="website">
 <style>
-:root{--bg:#F1F0FA;--card:#FFFFFF;--ink:#16163A;--muted:#5C5F85;--line:#DAD8EE;--soft:#E9E7F7;--a:#FF4D6D;--a2:#FFB703;--hd1:#2A0F3D;--hd2:#5A1A55;--ink-fixed:#12122A;
+:root{--a:#FF4D6D;--a2:#FFB703;--hd1:#2A0F3D;--hd2:#5A1A55;--ink-fixed:#12122A;
   --font:"Trebuchet MS","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --display:"Arial Black","Avenir Next","Segoe UI Black",Impact,sans-serif}
 html[data-mode="light"]{--bg:#F1F0FA;--card:#FFFFFF;--ink:#16163A;--muted:#5C5F85;--line:#DAD8EE;--soft:#E9E7F7}
@@ -104,9 +117,12 @@ ol.steps li{margin:8px 0}
 .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 20px;border-radius:18px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .2s;z-index:9;text-align:center}
 .toast.on{opacity:1}
 footer{text-align:center;color:var(--muted);padding:24px 16px;font-size:.88rem}
+.flinks{margin-top:10px}
+.flinks a{color:inherit;margin:0 8px;font-weight:700}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
-
+</head>
+<body>
 <header>
   <div class="wrap">
     <div class="hero">
@@ -188,7 +204,7 @@ footer{text-align:center;color:var(--muted);padding:24px 16px;font-size:.88rem}
   </section>
 </main>
 
-<footer class="bi"><span class="en">RAO EDITS runs fully on your device. No data leaves it.</span><span class="ur">RAO EDITS poori tarah aap ke device par chalta hai. Koi data bahar nahi jata.</span></footer>
+<footer class="bi"><span class="en">RAO EDITS runs fully on your device. No data leaves it.</span><span class="ur">RAO EDITS poori tarah aap ke device par chalta hai. Koi data bahar nahi jata.</span><div class="flinks"><a href="/about.html">About</a><a href="/privacy.html">Privacy Policy</a><a href="/contact.html">Contact</a></div></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
@@ -532,7 +548,8 @@ function makeCard(p,onUnfav){
       h('p',{class:'ur',style:'margin:0;color:var(--muted)',text:c.d[1]}),
       h('div',{class:'acts'},
         h('button',{class:'btn',type:'button',onclick:function(){copyText(p.text);}},bi('Copy','Copy karo')),
-        heart
+        heart,
+        h('button',{class:'btn alt',type:'button',onclick:function(){saveArt(svg,'rao-edits-'+p.id+'.svg');}},bi('Save design','Design save karo'))
       )
     )
   );
@@ -934,6 +951,10 @@ function renderSettings(){
   el.append(optGroup('ps','Prompts per page','Har page par prompts',[[12,'12','12'],[24,'24','24'],[48,'48','48']],function(){refreshList();}));
   el.append(optGroup('previews','Design previews','Design preview',[['on','Show','Dikhao'],['off','Hide (faster)','Chhupao (tez)']]));
 
+  var lg=group('Logo','Logo'),lb=h('div',{class:'opts'});
+  lb.append(h('button',{class:'btn hot',type:'button',onclick:saveLogoPNG},bi('Download logo (PNG)','Logo download karo (PNG)')));
+  lb.append(h('button',{class:'btn alt',type:'button',onclick:saveLogoSVG},bi('Download logo (SVG)','Logo download karo (SVG)')));
+  lg.append(lb);el.append(lg);
 
   var dg=group('Your data','Aap ka data'),db=h('div',{class:'opts'});
   db.append(confirmBtn('Clear saved prompts','Save kiye prompts mitao','Tap again to confirm','Pakka karne ke liye dobara dabao',function(){
@@ -968,5 +989,5 @@ applySettings();
 openTab('prompts');
 })();
 </script>
-
-</body></html>
+</body>
+</html>
