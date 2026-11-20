@@ -1,0 +1,972 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>RAO EDITS</title>
+<style>
+:root{--bg:#F1F0FA;--card:#FFFFFF;--ink:#16163A;--muted:#5C5F85;--line:#DAD8EE;--soft:#E9E7F7;--a:#FF4D6D;--a2:#FFB703;--hd1:#2A0F3D;--hd2:#5A1A55;--ink-fixed:#12122A;
+  --font:"Trebuchet MS","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --display:"Arial Black","Avenir Next","Segoe UI Black",Impact,sans-serif}
+html[data-mode="light"]{--bg:#F1F0FA;--card:#FFFFFF;--ink:#16163A;--muted:#5C5F85;--line:#DAD8EE;--soft:#E9E7F7}
+html[data-mode="dark"]{--bg:#0E0E22;--card:#181833;--ink:#F2F1FF;--muted:#A9A8D0;--line:#2C2C55;--soft:#222246}
+html[data-size="small"]{font-size:14px}
+html[data-size="normal"]{font-size:16px}
+html[data-size="large"]{font-size:18px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.5;font-size:1rem}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--a);outline-offset:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.bi{display:block}
+.ur{display:block;font-size:.74em;font-weight:500;opacity:.8;line-height:1.3}
+html[data-ur="off"] .ur{display:none}
+html[data-previews="off"] .art{display:none}
+
+/* header */
+header{background:linear-gradient(135deg,var(--hd1),var(--hd2));color:#fff;padding:20px 0 0;overflow:hidden}
+.hero{display:grid;gap:18px;align-items:center;padding-bottom:20px}
+.lockup{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo svg{display:block;width:68px;height:68px;border-radius:18px;box-shadow:0 6px 0 rgba(0,0,0,.25)}
+.wm{display:flex;align-items:center;gap:6px;margin:0;font-family:var(--display);font-weight:900;font-style:italic;font-size:clamp(2.1rem,8vw,3.6rem);line-height:1}
+.rao{background:linear-gradient(135deg,var(--a),var(--a2));color:var(--ink-fixed);padding:.06em .22em .1em;border-radius:.2em;box-shadow:0 .07em 0 rgba(0,0,0,.28)}
+.ed{color:#fff;letter-spacing:.03em;text-shadow:0 .05em .14em rgba(0,0,0,.4)}
+.tag{margin:12px 0 0;color:#E4E2FA;max-width:38ch}
+.count{display:inline-block;margin-top:12px;background:linear-gradient(135deg,var(--a),var(--a2));color:var(--ink-fixed);font-weight:800;padding:4px 14px;border-radius:99px;font-size:.9rem}
+.heroart{border-radius:22px;overflow:hidden;box-shadow:0 10px 0 rgba(0,0,0,.22);max-width:340px;width:100%}
+.heroart svg{display:block;width:100%;height:auto}
+@media(min-width:760px){.hero{grid-template-columns:1.25fr .75fr}.heroart{justify-self:end}}
+
+nav{display:flex;gap:4px;overflow-x:auto;padding-top:4px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:0 0 auto;background:transparent;border:0;color:#D6D4F2;padding:10px 16px;font-weight:700;border-radius:14px 14px 0 0;text-align:center}
+nav button[aria-selected="true"]{background:var(--bg);color:var(--ink)}
+
+main{padding:22px 0 60px}
+section[hidden]{display:none}
+h2{margin:0 0 4px;font-size:1.5rem;letter-spacing:-.02em;line-height:1.2}
+h3{margin:0}
+.sub{margin:0 0 16px;color:var(--muted)}
+
+/* controls */
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.bar input[type=search]{flex:1 1 200px;min-width:0;padding:11px 14px;border:2px solid var(--line);border-radius:14px;background:var(--card);color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;border:0;border-radius:99px;padding:9px 18px;font-weight:700;background:var(--ink);color:var(--bg)}
+.btn.alt{background:var(--card);color:var(--ink);border:2px solid var(--line)}
+.btn.hot{background:linear-gradient(135deg,var(--a),var(--a2));color:var(--ink-fixed)}
+.btn:active{transform:translateY(1px)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:thin}
+.chip{flex:0 0 auto;border:2px solid var(--line);background:var(--card);border-radius:16px;padding:6px 14px;font-weight:700;font-size:.9rem;text-align:center}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+
+/* cards */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--card);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;border:2px solid var(--line)}
+.card .art{display:block;width:100%;height:auto}
+.cbody{padding:14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cat{align-self:flex-start;background:var(--soft);padding:3px 12px;border-radius:14px;font-weight:700;font-size:.85rem}
+.ptxt{margin:0;font-size:.95rem;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
+.ptxt.open{-webkit-line-clamp:unset;display:block}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.acts .btn{padding:6px 12px;font-size:.88rem}
+.heart[aria-pressed="true"]{background:linear-gradient(135deg,var(--a),var(--a2));color:var(--ink-fixed);border-color:transparent}
+.more{display:flex;margin:24px auto 0}
+.empty{padding:40px 16px;text-align:center;color:var(--muted);background:var(--card);border-radius:22px;border:2px dashed var(--line);grid-column:1/-1}
+
+/* panels */
+.panel{background:var(--card);border-radius:22px;border:2px solid var(--line);padding:16px;margin-bottom:16px}
+.form{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+label{display:grid;gap:4px;font-weight:700;font-size:.9rem}
+select{padding:10px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);min-width:0}
+.out{white-space:pre-wrap;background:var(--soft);border-radius:14px;padding:12px;margin:8px 0;word-break:break-word}
+.lbl{font-weight:800;margin:14px 0 0}
+details{border-top:1px solid var(--line);padding:10px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:700;display:flex;gap:8px;align-items:center;justify-content:space-between}
+summary .bi{flex:1}
+details p{margin:8px 0}
+.fixp{background:var(--soft);border-radius:12px;padding:10px;margin:8px 0;font-size:.92rem}
+.idea{padding:14px}
+.idea h3{font-size:1.05rem;margin-bottom:6px}
+.idea p{margin:0 0 8px;color:var(--muted);font-size:.95rem}
+.badge{flex:0 0 auto;font-size:.75rem;font-weight:800;padding:2px 10px;border-radius:99px;background:var(--soft);text-align:center}
+.badge.pro{background:linear-gradient(135deg,var(--a),var(--a2));color:var(--ink-fixed)}
+ol.steps{margin:8px 0 4px;padding-left:22px}
+ol.steps li{margin:8px 0}
+.tutnote{font-size:.88rem;color:var(--muted);background:var(--soft);padding:10px 12px;border-radius:14px;margin-bottom:14px}
+
+/* settings */
+.sgroup{margin-bottom:18px}
+.sgroup>.lbl{margin:0 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:10px}
+.sw{border:3px solid var(--line);border-radius:18px;background:var(--card);padding:8px;text-align:center;font-weight:700;font-size:.82rem}
+.sw i{display:block;height:40px;border-radius:12px;margin-bottom:6px}
+.sw[aria-pressed="true"]{border-color:var(--ink)}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 20px;border-radius:18px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .2s;z-index:9;text-align:center}
+.toast.on{opacity:1}
+footer{text-align:center;color:var(--muted);padding:24px 16px;font-size:.88rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <div class="lockup">
+          <div class="logo" id="logo"></div>
+          <h1 class="wm" aria-label="RAO EDITS"><span class="rao">RAO</span><span class="ed">EDITS</span></h1>
+        </div>
+        <p class="tag bi"><span class="en">Ready-to-use photo editing prompts, CapCut and Canva tutorials, and a cartoon lab.</span><span class="ur">Photo editing ke prompts, CapCut aur Canva ke tutorials, aur cartoon lab, sab ek jagah.</span></p>
+        <span class="count" id="count">...</span>
+      </div>
+      <div class="heroart" id="heroart"></div>
+    </div>
+    <nav role="tablist" aria-label="Sections" id="tabs"></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="tab-prompts" role="tabpanel">
+    <h2 class="bi"><span class="en">Photo Editing Prompts</span><span class="ur">Photo editing ke prompts</span></h2>
+    <p class="sub bi"><span class="en">Tap a prompt to read it fully, then copy it into your AI editor.</span><span class="ur">Prompt par tap karo to poora khulega, phir copy karke apne AI editor me paste karo.</span></p>
+    <div class="bar">
+      <input type="search" id="q" maxlength="60" placeholder="Search: wedding, cartoon, chai..." aria-label="Search prompts">
+      <button class="btn alt" id="shuffle" type="button"><span class="bi"><span class="en">Shuffle</span><span class="ur">Mix karo</span></span></button>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Categories"></div>
+    <div class="grid" id="grid"></div>
+    <button class="btn hot more" id="more" type="button"><span class="bi"><span class="en">Show more</span><span class="ur">Aur dikhao</span></span></button>
+  </section>
+
+  <section id="tab-cartoon" role="tabpanel" hidden>
+    <h2 class="bi"><span class="en">Cartoon Lab</span><span class="ur">Cartoon Lab</span></h2>
+    <p class="sub bi"><span class="en">Pick options and get a prompt plus a negative prompt.</span><span class="ur">Options chuno, prompt aur negative prompt ban jayega.</span></p>
+    <div class="panel">
+      <div class="form" id="cform"></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+        <button class="btn hot" id="crandom" type="button"><span class="bi"><span class="en">Random</span><span class="ur">Koi bhi</span></span></button>
+        <button class="btn" id="ccopy" type="button"><span class="bi"><span class="en">Copy prompt</span><span class="ur">Prompt copy karo</span></span></button>
+        <button class="btn alt" id="cncopy" type="button"><span class="bi"><span class="en">Copy negative</span><span class="ur">Negative copy karo</span></span></button>
+      </div>
+      <p class="lbl bi"><span class="en">Prompt</span><span class="ur">Prompt</span></p>
+      <div class="out" id="cout"></div>
+      <p class="lbl bi"><span class="en">Negative prompt (what to avoid)</span><span class="ur">Negative prompt (jo nahi chahiye)</span></p>
+      <div class="out" id="cneg"></div>
+    </div>
+    <h2 style="margin-top:28px" class="bi"><span class="en">Common cartoon problems and fixes</span><span class="ur">Cartoon ki aam problems aur unka hal</span></h2>
+    <p class="sub bi"><span class="en">Each fix has a copy-ready prompt.</span><span class="ur">Har hal ke saath copy karne wala prompt hai.</span></p>
+    <div class="panel" id="fixes"></div>
+  </section>
+
+  <section id="tab-tuts" role="tabpanel" hidden>
+    <h2 class="bi"><span class="en">Editing Tutorials</span><span class="ur">Editing tutorials</span></h2>
+    <p class="sub bi"><span class="en">Step-by-step guides for CapCut and Canva.</span><span class="ur">CapCut aur Canva ke qadam ba qadam guides.</span></p>
+    <p class="tutnote bi"><span class="en">Menu names can differ slightly between app versions. "Pro" means the feature may need a paid plan.</span><span class="ur">App ke version ke hisaab se menu ke naam thora alag ho sakte hain. "Pro" ka matlab hai ke feature ke liye paid plan chahiye ho sakta hai.</span></p>
+    <div class="bar">
+      <input type="search" id="tq" maxlength="60" placeholder="Search: captions, keyframes, thumbnail..." aria-label="Search tutorials">
+    </div>
+    <div class="chips" id="tchips" role="group" aria-label="Apps"></div>
+    <div class="panel" id="tutlist"></div>
+  </section>
+
+  <section id="tab-ideas" role="tabpanel" hidden>
+    <h2 class="bi"><span class="en">Cartoon Idea Box</span><span class="ur">Cartoon ideas ka dabba</span></h2>
+    <p class="sub bi"><span class="en">Story ideas for YouTube, Instagram or BiliBili.</span><span class="ur">YouTube, Instagram ya BiliBili ke liye story ideas.</span></p>
+    <div class="bar"><button class="btn hot" id="newideas" type="button"><span class="bi"><span class="en">New ideas</span><span class="ur">Naye ideas</span></span></button></div>
+    <div class="grid" id="ideas"></div>
+  </section>
+
+  <section id="tab-favs" role="tabpanel" hidden>
+    <h2 class="bi"><span class="en">Saved Prompts</span><span class="ur">Pasandeeda prompts</span></h2>
+    <p class="sub bi"><span class="en">Prompts you saved with the heart button stay here.</span><span class="ur">Jo prompts aap ne save kiye woh yahan rehte hain.</span></p>
+    <div class="grid" id="favgrid"></div>
+  </section>
+
+  <section id="tab-settings" role="tabpanel" hidden>
+    <h2 class="bi"><span class="en">Settings</span><span class="ur">Settings</span></h2>
+    <p class="sub bi"><span class="en">Change colours, text size, language and more. Everything is saved on this device.</span><span class="ur">Rang, text ka size, zaban aur baqi cheezein badlo. Sab kuch isi device par save hota hai.</span></p>
+    <div class="panel" id="settings"></div>
+  </section>
+</main>
+
+<footer class="bi"><span class="en">RAO EDITS runs fully on your device. No data leaves it.</span><span class="ur">RAO EDITS poori tarah aap ke device par chalta hai. Koi data bahar nahi jata.</span></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- helpers ---------- */
+function $(s,r){return (r||document).querySelector(s);}
+function h(tag,attrs){
+  var e=document.createElement(tag);
+  attrs=attrs||{};
+  for(var k in attrs){
+    if(!Object.prototype.hasOwnProperty.call(attrs,k))continue;
+    var v=attrs[k];
+    if(k==='class')e.className=v;
+    else if(k==='text')e.textContent=v;
+    else if(k.slice(0,2)==='on')e.addEventListener(k.slice(2),v);
+    else if(v!==false&&v!=null)e.setAttribute(k,v);
+  }
+  for(var i=2;i<arguments.length;i++){
+    var c=arguments[i];
+    if(c==null)continue;
+    if(Array.isArray(c)){c.forEach(function(x){if(x!=null)e.append(x.nodeType?x:document.createTextNode(String(x)));});}
+    else e.append(c.nodeType?c:document.createTextNode(String(c)));
+  }
+  return e;
+}
+function bi(en,ur){return h('span',{class:'bi'},h('span',{class:'en',text:en}),h('span',{class:'ur',text:ur}));}
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function pick(arr,r){return arr[Math.floor(r()*arr.length)];}
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function rnd(a){return Math.floor(Math.random()*a.length);}
+
+var mem={};
+var store={
+  get:function(k,d){try{var v=window.localStorage.getItem(k);if(v===null)return (k in mem)?mem[k]:d;return JSON.parse(v);}catch(e){return (k in mem)?mem[k]:d;}},
+  set:function(k,v){mem[k]=v;try{window.localStorage.setItem(k,JSON.stringify(v));}catch(e){}},
+  del:function(k){delete mem[k];try{window.localStorage.removeItem(k);}catch(e){}}
+};
+
+var toastEl=$('#toast'),toastT=0;
+function toast(en,ur){
+  toastEl.textContent='';toastEl.append(bi(en,ur));toastEl.classList.add('on');
+  clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove('on');},1700);
+}
+function copyText(text){
+  function fallback(){
+    try{
+      var ta=h('textarea',{'aria-hidden':'true',style:'position:fixed;left:-9999px;top:0'});
+      ta.value=text;document.body.append(ta);ta.select();
+      var ok=document.execCommand('copy');ta.remove();
+      if(ok)toast('Copied','Copy ho gaya');else toast('Copy failed. Select the text and copy it.','Copy nahi hua. Text select karke copy karo.');
+    }catch(e){toast('Copy failed. Select the text and copy it.','Copy nahi hua. Text select karke copy karo.');}
+  }
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(function(){toast('Copied','Copy ho gaya');},fallback);
+  }else fallback();
+}
+function download(blob,name){
+  var url=URL.createObjectURL(blob);
+  var a=h('a',{href:url,download:name});document.body.append(a);a.click();a.remove();
+  setTimeout(function(){URL.revokeObjectURL(url);},2500);
+}
+
+/* ---------- SVG art and logo ---------- */
+var gid=0,NS='http://www.w3.org/2000/svg';
+function s(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+function art(seed,hue){
+  var r=mulberry32(seed),id='rg'+(gid++);
+  var h1=(hue+Math.floor(r()*40))%360,h2=(hue+130+Math.floor(r()*80))%360;
+  var svg=s('svg',{viewBox:'0 0 200 140',role:'img','aria-label':'Design preview',class:'art'});
+  var defs=s('defs',{}),lg=s('linearGradient',{id:id,x1:'0',y1:'0',x2:'0',y2:'1'});
+  lg.append(s('stop',{offset:'0','stop-color':'hsl('+h1+',85%,62%)'}));
+  lg.append(s('stop',{offset:'1','stop-color':'hsl('+h2+',80%,74%)'}));
+  defs.append(lg);svg.append(defs);
+  svg.append(s('rect',{width:'200',height:'140',fill:'url(#'+id+')'}));
+  var i;
+  for(i=0;i<7;i++)svg.append(s('circle',{cx:(r()*200).toFixed(1),cy:(r()*70).toFixed(1),r:(0.8+r()*1.6).toFixed(1),fill:'#fff',opacity:'0.7'}));
+  svg.append(s('circle',{cx:(25+r()*150).toFixed(1),cy:(22+r()*25).toFixed(1),r:(13+r()*9).toFixed(1),fill:'hsl(45,100%,66%)',opacity:'0.95'}));
+  var cx=(20+r()*50).toFixed(0),cy=(14+r()*30).toFixed(0);
+  svg.append(s('ellipse',{cx:cx,cy:cy,rx:'20',ry:'7',fill:'#fff',opacity:'0.55'}));
+  svg.append(s('ellipse',{cx:String(Number(cx)+110),cy:String(Number(cy)+14),rx:'16',ry:'6',fill:'#fff',opacity:'0.45'}));
+  svg.append(s('path',{d:'M0 112 Q50 '+(78+r()*22).toFixed(0)+' 105 106 T200 98 V140 H0Z',fill:'hsl('+((h2+40)%360)+',45%,42%)'}));
+  svg.append(s('path',{d:'M0 122 Q60 '+(100+r()*14).toFixed(0)+' 120 120 T200 116 V140 H0Z',fill:'hsl('+((h2+70)%360)+',40%,30%)'}));
+  var hair='hsl('+Math.floor(r()*40)+',35%,'+(14+Math.floor(r()*14))+'%)';
+  if(r()<0.45){svg.append(s('circle',{cx:'79',cy:'68',r:'9',fill:hair}));svg.append(s('circle',{cx:'121',cy:'68',r:'9',fill:hair}));}
+  svg.append(s('ellipse',{cx:'100',cy:'124',rx:'27',ry:'22',fill:'hsl('+((hue+Math.floor(r()*80))%360)+',70%,56%)'}));
+  svg.append(s('circle',{cx:'100',cy:'90',r:'24',fill:'hsl('+(22+Math.floor(r()*16))+',70%,78%)'}));
+  svg.append(s('path',{d:'M76 88 Q100 50 124 88 Q100 70 76 88Z',fill:hair}));
+  [91,109].forEach(function(x){
+    svg.append(s('circle',{cx:String(x),cy:'92',r:'3.4',fill:'#1b1b2a'}));
+    svg.append(s('circle',{cx:String(x+1),cy:'91',r:'1.1',fill:'#fff'}));
+  });
+  svg.append(s('ellipse',{cx:'85',cy:'99',rx:'4',ry:'2.5',fill:'#ff7aa2',opacity:'0.55'}));
+  svg.append(s('ellipse',{cx:'115',cy:'99',rx:'4',ry:'2.5',fill:'#ff7aa2',opacity:'0.55'}));
+  svg.append(s('path',{d:'M92 100 Q100 108 108 100',stroke:'#1b1b2a','stroke-width':'2',fill:'none','stroke-linecap':'round'}));
+  return svg;
+}
+function serialize(svg,px){
+  var c=svg.cloneNode(true);c.setAttribute('xmlns',NS);
+  c.setAttribute('width',String(px));c.setAttribute('height',String(Math.round(px*(svg.getAttribute('viewBox').split(' ')[3]/svg.getAttribute('viewBox').split(' ')[2]))));
+  return new XMLSerializer().serializeToString(c);
+}
+function saveArt(svg,name){
+  try{download(new Blob([serialize(svg,1000)],{type:'image/svg+xml'}),name);toast('Design saved','Design save ho gaya');}
+  catch(e){toast('Could not save','Save nahi ho saka');}
+}
+/* logo: top half = RAO in dark ink, bottom half = EDITS in white */
+function logoSVG(a,a2,px){
+  var id='lg'+(gid++),cid='lc'+(gid++);
+  var svg=s('svg',{viewBox:'0 0 120 120',width:String(px),height:String(px),role:'img','aria-label':'RAO EDITS logo'});
+  var defs=s('defs',{}),lg=s('linearGradient',{id:id,x1:'0',y1:'0',x2:'1',y2:'1'});
+  lg.append(s('stop',{offset:'0','stop-color':a}));lg.append(s('stop',{offset:'1','stop-color':a2}));
+  var cp=s('clipPath',{id:cid});cp.append(s('rect',{width:'120',height:'120',rx:'28'}));
+  defs.append(lg);defs.append(cp);svg.append(defs);
+  var g=s('g',{'clip-path':'url(#'+cid+')'});
+  g.append(s('rect',{width:'120',height:'120',fill:'url(#'+id+')'}));
+  g.append(s('path',{d:'M0 66 L120 54 V120 H0Z',fill:'#12122A'}));
+  svg.append(g);
+  var font='Arial Black, Impact, Arial, sans-serif';
+  var t1=s('text',{x:'60',y:'47','text-anchor':'middle','font-family':font,'font-weight':'900','font-style':'italic','font-size':'38',fill:'#12122A',textLength:'84',lengthAdjust:'spacingAndGlyphs'});
+  t1.textContent='RAO';svg.append(t1);
+  var t2=s('text',{x:'60',y:'101','text-anchor':'middle','font-family':font,'font-weight':'900','font-style':'italic','font-size':'27',fill:'#FFFFFF',textLength:'92',lengthAdjust:'spacingAndGlyphs'});
+  t2.textContent='EDITS';svg.append(t2);
+  svg.append(s('path',{d:'M98 14 L101 22 L109 25 L101 28 L98 36 L95 28 L87 25 L95 22Z',fill:'#FFFFFF',opacity:'0.9'}));
+  return svg;
+}
+function saveLogoSVG(){
+  try{download(new Blob([serialize(logoSVG(T().a,T().a2,512),512)],{type:'image/svg+xml'}),'rao-edits-logo.svg');toast('Logo saved (SVG)','Logo save ho gaya (SVG)');}
+  catch(e){toast('Could not save','Save nahi ho saka');}
+}
+function saveLogoPNG(){
+  try{
+    var xml=serialize(logoSVG(T().a,T().a2,1024),1024);
+    var url=URL.createObjectURL(new Blob([xml],{type:'image/svg+xml'}));
+    var img=new Image();
+    img.onload=function(){
+      try{
+        var c=document.createElement('canvas');c.width=1024;c.height=1024;
+        c.getContext('2d').drawImage(img,0,0,1024,1024);
+        c.toBlob(function(b){
+          URL.revokeObjectURL(url);
+          if(b){download(b,'rao-edits-logo.png');toast('Logo saved (PNG)','Logo save ho gaya (PNG)');}
+          else saveLogoSVG();
+        },'image/png');
+      }catch(e){URL.revokeObjectURL(url);saveLogoSVG();}
+    };
+    img.onerror=function(){URL.revokeObjectURL(url);saveLogoSVG();};
+    img.src=url;
+  }catch(e){saveLogoSVG();}
+}
+
+/* ---------- settings and themes ---------- */
+var THEMES={
+  sunset:{n:['Sunset','Shaam'],a:'#FF4D6D',a2:'#FFB703',h1:'#2A0F3D',h2:'#5A1A55'},
+  ocean:{n:['Ocean','Samandar'],a:'#19C3E6',a2:'#4F8CFF',h1:'#07213F',h2:'#0C3B73'},
+  emerald:{n:['Emerald','Zumurrad'],a:'#19D68B',a2:'#C6F04B',h1:'#062B22',h2:'#0B5A44'},
+  royal:{n:['Royal','Shahi'],a:'#A66BFF',a2:'#FF6BD6',h1:'#1B1040',h2:'#3A1C78'},
+  gold:{n:['Gold','Sunehri'],a:'#FFC23C',a2:'#FF8A3C',h1:'#2B1A07',h2:'#5C3A0C'},
+  rose:{n:['Rose','Gulabi'],a:'#FF6FA8',a2:'#FFA0C8',h1:'#3A0F25',h2:'#7A1F4A'}
+};
+var DEFAULTS={mode:'auto',theme:'sunset',size:'normal',ur:'on',ps:24,previews:'on'};
+var OK={mode:['auto','light','dark'],theme:Object.keys(THEMES),size:['small','normal','large'],ur:['on','off'],ps:[12,24,48],previews:['on','off']};
+function loadSettings(){
+  var raw=store.get('rao_settings',{}),o={};
+  if(!raw||typeof raw!=='object')raw={};
+  Object.keys(DEFAULTS).forEach(function(k){o[k]=OK[k].indexOf(raw[k])!==-1?raw[k]:DEFAULTS[k];});
+  return o;
+}
+var SET=loadSettings();
+function T(){return THEMES[SET.theme];}
+var mq=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null;
+var favLink=null;
+function applySettings(){
+  var root=document.documentElement,t=T();
+  var mode=SET.mode==='auto'?((mq&&mq.matches)?'dark':'light'):SET.mode;
+  root.setAttribute('data-mode',mode);
+  root.setAttribute('data-size',SET.size);
+  root.setAttribute('data-ur',SET.ur);
+  root.setAttribute('data-previews',SET.previews);
+  root.style.setProperty('--a',t.a);root.style.setProperty('--a2',t.a2);
+  root.style.setProperty('--hd1',t.h1);root.style.setProperty('--hd2',t.h2);
+  var lg=$('#logo');lg.textContent='';lg.append(logoSVG(t.a,t.a2,68));
+  try{
+    if(!favLink){favLink=h('link',{rel:'icon',type:'image/svg+xml'});document.head.append(favLink);}
+    favLink.setAttribute('href','data:image/svg+xml,'+encodeURIComponent(serialize(logoSVG(t.a,t.a2,64),64)));
+  }catch(e){}
+}
+function saveSettings(){store.set('rao_settings',SET);}
+if(mq){var onMq=function(){if(SET.mode==='auto')applySettings();};if(mq.addEventListener)mq.addEventListener('change',onMq);else if(mq.addListener)mq.addListener(onMq);}
+
+/* ---------- prompt data ---------- */
+var CATS=[
+{id:'portrait',name:'Portrait Retouch',ur:'Chehra saaf karo',hue:340,
+ d:['Natural face retouch','Chehra natural tareeqe se saaf karo'],
+ tpl:'Retouch this photo of {subject}: {skin}, {eyes}, {light}, {finish}. Keep the face, identity and proportions exactly the same, no plastic skin, ultra realistic, 8k.',
+ slots:{
+  subject:['a young man','a young woman','a smiling child','a bearded man','an elderly woman','a couple','a bride','a groom','a student in uniform','a business professional'],
+  skin:['natural skin texture with blemishes gently removed','smooth skin that still keeps visible pores','soft glowing skin with subtle highlights','even skin tone with dark circles reduced','clean matte skin with shine controlled','warm sun-kissed skin tone'],
+  eyes:['brighter sharper eyes with natural catchlights','whiter teeth and a subtle smile enhancement','defined eyebrows and soft lip colour','clean eye whites and subtle eye contrast'],
+  light:['soft window light','golden hour rim light','studio softbox lighting','cinematic side light','bright airy daylight','moody low-key lighting'],
+  finish:['magazine-quality finish','film-grade colour grading','clean natural look','high-end beauty retouch style','warm film-like tones','crisp HDR detail']}},
+{id:'background',name:'Background Change',ur:'Background badlo',hue:200,
+ d:['Swap the background realistically','Background ko asli jaisa badlo'],
+ tpl:'Replace the background behind {subject} with {place}. {blend}, {blend2}. {keep}. Photorealistic, 4k.',
+ slots:{
+  subject:['the person in this photo','the product in this photo','the couple in this photo','the car in this photo','the pet in this photo','the group in this photo'],
+  place:['a luxury marble studio','Hunza valley at sunrise','a mosque courtyard at dusk','a neon Tokyo street at night','a cosy cafe with warm bokeh','a snowy mountain top','a tropical beach at golden hour','a modern glass office','a royal palace hall','a green garden in spring','a clean white seamless backdrop','a futuristic city skyline'],
+  blend:['match the lighting and shadows to the new scene','add natural contact shadows','blend the edges softly','add realistic depth of field'],
+  blend2:['keep hair strands clean and natural','match colour temperature','remove any colour fringe around the edges','keep the perspective believable'],
+  keep:['Keep face, clothes and pose unchanged','Preserve original colours and proportions','Do not alter the identity']}},
+{id:'cartoonize',name:'Photo to Cartoon',ur:'Photo se cartoon',hue:20,
+ d:['Turn a photo into a cartoon','Photo ko cartoon me badlo'],
+ tpl:'Turn this photo of {subject} into {style}: {features}, {outline}, {palette}. Keep the likeness recognisable and the same pose, high detail.',
+ slots:{
+  subject:['me','this couple','this child','this family','my pet','this group of friends'],
+  style:['a Pixar-style 3D animated character','a soft hand-painted anime portrait','a bold comic-book illustration','a flat vector cartoon avatar','a chibi sticker character','a clay-animation character','a 2D Saturday-morning cartoon','a watercolour storybook illustration','a retro 90s cartoon frame'],
+  features:['big expressive eyes and a smooth rounded face','a slightly exaggerated smile','identical hairstyle and beard','same glasses and accessories','friendly cartoon proportions'],
+  outline:['clean thick outlines','thin delicate line art','no outlines with soft shading','cel-shaded with crisp shadows'],
+  palette:['bright candy colours','warm sunset palette','cool pastel palette','rich saturated primaries','earthy muted tones']}},
+{id:'product',name:'Product Photo',ur:'Product ki photo',hue:260,
+ d:['Premium ad-style product shots','Ad jaisi premium product photo'],
+ tpl:'Create a premium product photo of {subject} on {surface}, {light}, {angle}, {extra}. Sharp focus, true-to-life colours, ad-ready, 4k.',
+ slots:{
+  subject:['this perfume bottle','these sneakers','this watch','this skincare jar','this handbag','this phone','this coffee mug','these headphones','this jewellery piece','this energy drink can'],
+  surface:['a polished black glass table','a pastel gradient backdrop','a rough stone slab','a wooden table with soft shadows','a mirror surface with reflection','a floating platform with water splashes'],
+  light:['soft diffused studio light','dramatic rim lighting','warm golden light','clean high-key lighting','neon accent lights'],
+  angle:['45 degree hero angle','straight-on front view','low angle for a powerful look','top-down flat lay'],
+  extra:['with subtle floating particles','with fresh flowers beside it','with light mist in the background','with a clean empty space for text']}},
+{id:'grade',name:'Colour Grading',ur:'Rang ki setting',hue:30,
+ d:['Cinematic and film colour looks','Cinema aur film jaise rang'],
+ tpl:'Colour grade this photo with {look}: {contrast}, {tone}, {grain}. Keep skin tones natural and do not change the composition.',
+ slots:{
+  look:['a teal and orange cinema look','moody muted Nordic tones','warm vintage 70s film','clean bright and airy tones','cyberpunk neon magenta and cyan','a golden hour glow','black and white high-contrast noir','pastel dreamy matte tones','deep forest green tones','warm saturated drama'],
+  contrast:['gentle contrast curve','punchy contrast','lifted blacks for a matte look','deep shadows and soft highlights'],
+  tone:['warm highlights and cool shadows','cool highlights and warm shadows','neutral whites and rich colour','slightly desaturated greens'],
+  grain:['fine film grain','no grain, ultra clean','light halation glow','subtle vignette']}},
+{id:'fashion',name:'Fashion & Wedding',ur:'Fashion aur shaadi',hue:310,
+ d:['Editorial, wedding and Eid shoots','Editorial, shaadi aur Eid shoots'],
+ tpl:'Edit this photo into a {mood} {genre} shoot of {subject}: {outfit}, {pose}, {light}. Magazine cover quality, realistic fabric detail.',
+ slots:{
+  mood:['elegant','bold','dreamy','royal','minimal','playful'],
+  genre:['fashion editorial','wedding','Eid festive','streetwear','traditional wear','engagement'],
+  subject:['a woman','a man','a couple','a bride','a groom','a family'],
+  outfit:['with refined embroidery details','in a rich velvet outfit','with golden jewellery accents','in a crisp tailored suit','in flowing silk fabric'],
+  pose:['natural candid pose','confident standing pose','soft side glance','walking toward the camera'],
+  light:['soft golden hour light','clean studio light','candle-lit warm glow','bright natural window light']}},
+{id:'restore',name:'Old Photo Restore',ur:'Purani photo theek karo',hue:45,
+ d:['Repair and colourise old photos','Purani photo theek aur rangeen karo'],
+ tpl:'Restore this old photo: {fix}, {colour}, {detail}. Keep faces true to the original and do not invent new features, ultra sharp.',
+ slots:{
+  fix:['remove scratches, creases and dust','repair torn corners and missing areas','remove yellow stains and fading','fix blur and increase sharpness','reduce noise and heavy film grain'],
+  colour:['colourise with natural period-accurate colours','keep it black and white with rich tonal range','restore warm sepia tones','add realistic skin tones'],
+  detail:['enhance eyes and facial detail carefully','upscale to 4k resolution','recover clothing texture','rebuild background detail softly']}},
+{id:'food',name:'Food Photo',ur:'Khane ki photo',hue:15,
+ d:['Fresh, appetising food shots','Taaza aur lazeez khane ki photo'],
+ tpl:'Edit this food photo of {subject}: {light}, {styling}, {colour}. Make it look fresh, juicy and appetising, restaurant-menu quality.',
+ slots:{
+  subject:['biryani','karahi','a burger','a pizza','chai and snacks','a chocolate cake','a BBQ platter','fresh juice','pasta','samosa chaat'],
+  light:['warm side light with soft steam','bright natural window light','moody dark background with a spotlight','clean white daylight'],
+  styling:['garnished with fresh herbs','with a rustic wooden board','with a clean ceramic plate','with scattered ingredients around'],
+  colour:['rich warm colours','vibrant natural colours','slightly desaturated editorial tones','golden glossy highlights']}},
+{id:'thumb',name:'YouTube Thumbnail',ur:'YouTube thumbnail',hue:0,
+ d:['Click-worthy thumbnails','Click karwane wale thumbnails'],
+ tpl:'Make a YouTube thumbnail from this photo: {subject}, {text}, {bg}, {effect}. High contrast, 16:9, bold readable text, eye-catching.',
+ slots:{
+  subject:['a shocked face close-up','the person pointing at the object','a smiling presenter on the left','a split-screen before and after','the person with a big arrow'],
+  text:['big yellow text "YEH DEKHO"','bold red text "SECRET REVEALED"','white text with a black outline "100% WORKING"','neon text "NEW 2026"','bold Urdu text with a drop shadow'],
+  bg:['a bright red gradient background','a dark blue studio background','a blurred city background','a colourful burst background'],
+  effect:['a glow outline around the person','light rays and sparkles','a subtle zoom blur','a vibrant saturation boost']}},
+{id:'islamic',name:'Islamic Art',ur:'Islami art',hue:150,
+ d:['Respectful posters and calligraphy','Adab wale posters aur khattati'],
+ tpl:'Design {subject} in {style}: {palette}, {detail}. Respectful, elegant, high resolution, no human faces.',
+ slots:{
+  subject:['a Ramadan Mubarak greeting post','a Jumma Mubarak poster','an Ayat-ul-Kursi calligraphy artwork','a mosque silhouette at sunset','an Eid Mubarak card','a 99 Names of Allah poster','a dua infographic','a Quranic verse wallpaper','a mehrab arch geometric artwork','a crescent and lantern night scene'],
+  style:['gold calligraphy on deep green','geometric arabesque patterns','minimal white on navy','soft pastel watercolour','Mughal miniature ornament','a glowing neon night style'],
+  palette:['emerald, gold and ivory','navy, silver and white','teal, sand and bronze','deep purple and gold'],
+  detail:['with fine ornamental borders','with soft light rays','with subtle star patterns','with clean empty space for text']}},
+{id:'character',name:'Cartoon Characters',ur:'Cartoon kirdar',hue:95,
+ d:['Character sheets for cartoons','Cartoon ke character sheets'],
+ tpl:'Character design of {subject}, {style}, {outfit}, {expression}, full body, front view, simple background, consistent proportions, character sheet with front, side and back views.',
+ slots:{
+  subject:['a brave little bunny','a cheerful chai seller','a clever street cat','a shy robot','a young girl explorer','a kind grandfather','a small dragon','a village boy with a kite','a tiny astronaut','a friendly camel'],
+  style:['Pixar-style 3D','soft hand-painted anime','flat vector','chibi','storybook watercolour','clay-animation','retro 90s cartoon'],
+  outfit:['wearing a bright red scarf','in traditional shalwar kameez','in a tiny explorer backpack and hat','wearing a patched blue jacket','with a golden amulet'],
+  expression:['happy and excited','curious and wide-eyed','determined and brave','sleepy and calm','surprised with open mouth']}}
+];
+var PER=1000;
+function build(ci,i){
+  var c=CATS[ci],r=mulberry32((ci+1)*7919+i*104729),chosen={};
+  return c.tpl.replace(/\{(\w+)\}/g,function(m,k){
+    if(!Object.prototype.hasOwnProperty.call(c.slots,k))return '';
+    if(!(k in chosen))chosen[k]=pick(c.slots[k],r);
+    return chosen[k];
+  });
+}
+var ALL=[];
+for(var g=0;g<CATS.length*PER;g++){
+  var ci0=g%CATS.length,i0=Math.floor(g/CATS.length),tx=build(ci0,i0);
+  ALL.push({id:ci0+'-'+i0,ci:ci0,i:i0,text:tx,low:(tx+' '+CATS[ci0].name+' '+CATS[ci0].ur).toLowerCase()});
+}
+$('#count').textContent=ALL.length.toLocaleString('en-US')+' prompts';
+$('#heroart').append(art(2026,260));
+
+/* ---------- favourites ---------- */
+var favs=(function(){
+  var raw=store.get('rao_favs',[]);if(!Array.isArray(raw))return [];
+  return raw.filter(function(x){
+    if(typeof x!=='string'||!/^\d{1,2}-\d{1,4}$/.test(x))return false;
+    var p=x.split('-');return Number(p[0])<CATS.length&&Number(p[1])<PER;
+  });
+})();
+function isFav(id){return favs.indexOf(id)!==-1;}
+function toggleFav(id){
+  var k=favs.indexOf(id);
+  if(k===-1)favs.push(id);else favs.splice(k,1);
+  store.set('rao_favs',favs);
+  return k===-1;
+}
+
+/* ---------- prompt cards ---------- */
+function heartLabel(on){return on?bi('Saved','Save ho gaya'):bi('Save','Save karo');}
+function makeCard(p,onUnfav){
+  var c=CATS[p.ci];
+  var svg=art(p.ci*PER+p.i+1,c.hue);
+  var txt=h('p',{class:'ptxt',text:p.text,tabindex:'0',role:'button','aria-expanded':'false',
+    onclick:function(){var o=txt.classList.toggle('open');txt.setAttribute('aria-expanded',String(o));},
+    onkeydown:function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();txt.click();}}});
+  var heart=h('button',{class:'btn alt heart',type:'button','aria-pressed':String(isFav(p.id)),
+    onclick:function(){
+      var on=toggleFav(p.id);
+      heart.setAttribute('aria-pressed',String(on));heart.textContent='';heart.append(heartLabel(on));
+      if(on)toast('Added to saved','Save list me add ho gaya');else toast('Removed','Hata diya');
+      if(!on&&onUnfav)onUnfav(card);
+    }},heartLabel(isFav(p.id)));
+  var card=h('article',{class:'card'},
+    svg,
+    h('div',{class:'cbody'},
+      h('span',{class:'cat'},bi(c.name,c.ur)),
+      txt,
+      h('p',{class:'ur',style:'margin:0;color:var(--muted)',text:c.d[1]}),
+      h('div',{class:'acts'},
+        h('button',{class:'btn',type:'button',onclick:function(){copyText(p.text);}},bi('Copy','Copy karo')),
+        heart
+      )
+    )
+  );
+  return card;
+}
+
+var state={cat:-1,q:'',list:ALL.slice(),shown:0};
+var grid=$('#grid'),moreBtn=$('#more');
+function refreshList(){
+  var q=state.q.trim().toLowerCase();
+  state.list=ALL.filter(function(p){return (state.cat<0||p.ci===state.cat)&&(!q||p.low.indexOf(q)!==-1);});
+  state.shown=0;grid.textContent='';
+  showMore();
+}
+function showMore(){
+  var end=Math.min(state.shown+SET.ps,state.list.length);
+  var frag=document.createDocumentFragment();
+  for(var k=state.shown;k<end;k++)frag.append(makeCard(state.list[k]));
+  grid.append(frag);state.shown=end;
+  if(!state.list.length)grid.append(h('div',{class:'empty'},bi('No prompts found. Try another word.','Koi prompt nahi mila. Doosra lafz try karo.')));
+  moreBtn.hidden=state.shown>=state.list.length;
+}
+moreBtn.addEventListener('click',showMore);
+$('#shuffle').addEventListener('click',function(){
+  shuffle(state.list);state.shown=0;grid.textContent='';showMore();toast('Shuffled','Mix ho gaya');
+});
+var qT=0;
+$('#q').addEventListener('input',function(e){
+  var v=String(e.target.value).slice(0,60);
+  clearTimeout(qT);qT=setTimeout(function(){state.q=v;refreshList();},160);
+});
+var chipsEl=$('#chips');
+(function(){
+  var all=[{n:'All',u:'Sab',i:-1}].concat(CATS.map(function(c,i){return {n:c.name,u:c.ur,i:i};}));
+  all.forEach(function(c){
+    chipsEl.append(h('button',{class:'chip',type:'button','aria-pressed':String(c.i===state.cat),onclick:function(){
+      state.cat=c.i;
+      Array.prototype.forEach.call(chipsEl.children,function(x,k){x.setAttribute('aria-pressed',String(all[k].i===state.cat));});
+      refreshList();
+    }},bi(c.n,c.u)));
+  });
+})();
+refreshList();
+
+function renderFavs(){
+  var fg=$('#favgrid');fg.textContent='';
+  if(!favs.length){fg.append(h('div',{class:'empty'},bi('Nothing saved yet. Tap Save on any prompt.','Abhi kuch save nahi. Kisi prompt par Save karo dabao.')));return;}
+  favs.forEach(function(id){
+    var p=ALL.filter(function(x){return x.id===id;})[0];
+    if(p)fg.append(makeCard(p,function(card){card.remove();if(!favs.length)renderFavs();}));
+  });
+}
+
+/* ---------- cartoon lab ---------- */
+var LAB=[
+  ['Style','Andaz',['Pixar-style 3D animation','soft hand-painted anime','flat vector cartoon','chibi kawaii','storybook watercolour','clay stop-motion','retro 90s cartoon','bold comic-book ink']],
+  ['Character','Kirdar',['a brave little bunny','a cheerful chai seller','a clever street cat','a shy robot','a young girl explorer','a kind grandfather','a small dragon','a tiny astronaut']],
+  ['Outfit','Libaas',['a bright red scarf','a traditional shalwar kameez','an explorer hat and backpack','a patched blue jacket','a golden amulet and cape']],
+  ['Expression','Chehre ka bhaav',['happy and excited','curious and wide-eyed','determined and brave','sleepy and calm','surprised']],
+  ['Scene','Manzar',['a sunny mountain valley','a busy old-city bazaar','a glowing night sky with lanterns','a cosy village kitchen','a floating island above the clouds','a snowy pine forest']],
+  ['Shot','Shot ki qisam',['full-body character sheet, front, side and back','wide establishing shot','close-up portrait','dynamic action pose','cute sticker with white border']]
+];
+var NEG='photorealistic, blurry, low quality, extra fingers, deformed hands, distorted face, asymmetrical eyes, cropped, watermark, random text, messy background, inconsistent proportions';
+var cform=$('#cform'),sel=[];
+LAB.forEach(function(f,k){
+  var s1=h('select',{id:'lab-'+k,onchange:updateLab});
+  f[2].forEach(function(o,i){s1.append(h('option',{value:String(i),text:o}));});
+  sel.push(s1);cform.append(h('label',{for:'lab-'+k},bi(f[0],f[1]),s1));
+});
+function updateLab(){
+  var v=sel.map(function(x,k){return LAB[k][2][Number(x.value)];});
+  $('#cout').textContent=v[5]+' of '+v[1]+', wearing '+v[2]+', '+v[3]+', in '+v[4]+'. Style: '+v[0]+', clean shapes, consistent proportions, vibrant harmonious colours, soft lighting, high detail, 4k.';
+  $('#cneg').textContent=NEG;
+}
+$('#crandom').addEventListener('click',function(){sel.forEach(function(x,k){x.value=String(rnd(LAB[k][2]));});updateLab();});
+$('#ccopy').addEventListener('click',function(){copyText($('#cout').textContent);});
+$('#cncopy').addEventListener('click',function(){copyText(NEG);});
+updateLab();
+
+var FIXES=[
+ ['Character face changes in every image','Har image me chehra badal jata hai',
+  'Make a character sheet first (front, side, back). Then paste the same full description into every scene, keep the same seed, and attach the sheet as a reference image.',
+  'Pehle character sheet banao (front, side, back). Phir har scene me wahi poori description paste karo, same seed rakho aur sheet ko reference image ki tarah lagao.',
+  'Same character as the reference sheet, identical face, hairstyle, outfit and colours, only the pose and background change.'],
+ ['Hands and fingers look wrong','Haath aur ungliyan kharab aati hain',
+  'Hide the hands in pockets, behind the back or holding an object. Or show the character from further away. Add finger errors to the negative prompt.',
+  'Haath jeb me, peeche ya kisi cheez ke saath rakho. Ya character door se dikhao. Ungliyon ki ghaltiyan negative prompt me likho.',
+  'Hands in pockets or holding a cup, five fingers, correct hand anatomy. Negative: extra fingers, deformed hands.'],
+ ['Cartoon turns realistic','Cartoon realistic ban jata hai',
+  'Put the style words at the very start of the prompt and say "not photorealistic".',
+  'Style ke alfaaz prompt ke bilkul shuru me rakho aur "not photorealistic" likho.',
+  '2D flat cartoon illustration, thick outlines, cel shading, not photorealistic, not a photo.'],
+ ['Text comes out wrong','Text galat likha aata hai',
+  'Do not ask the AI to write text. Keep signs blank and add the text later in Canva or CapCut.',
+  'AI se text mat likhwao. Sign khali rakho aur text baad me Canva ya CapCut me daalo.',
+  'A blank wooden sign with no text, clean empty space for text.'],
+ ['Colours look dull or flat','Rang dull ya flat lagte hain',
+  'Pick only 3 or 4 colours and name them in the prompt. Also describe the light direction.',
+  'Sirf 3 ya 4 rang chuno aur prompt me naam se likho. Roshni ki direction bhi batao.',
+  'Limited palette of coral, teal, mustard and cream, warm rim light from the left, rich saturated colours.'],
+ ['Background is too busy','Background bohat busy hai',
+  'Keep the background simple so the character stands out.',
+  'Background simple rakho taake character sab se zyada nazar aaye.',
+  'Simple soft gradient background with gentle blur, no clutter, character is the focus.'],
+ ['Eyes are not symmetrical','Aankhein barabar nahi banti',
+  'Ask for symmetry and keep the face in front view.',
+  'Symmetry maango aur chehra front view me rakho.',
+  'Front view, perfectly symmetrical large eyes, same size, same direction of gaze.'],
+ ['Photo-to-cartoon loses the likeness','Photo se cartoon me shakal nahi milti',
+  'Keep edit strength around 40 to 60 percent. Mention hairstyle, beard, glasses and clothes.',
+  'Edit strength 40 se 60 percent rakho. Hairstyle, daari, chashma aur kapre ka zikr karo.',
+  'Keep the likeness: same hairstyle, beard, glasses and skin tone, stylised as a cartoon.'],
+ ['Character differs across video scenes','Video scenes me character alag dikhta hai',
+  'Start every scene prompt with the same character block. Change only the action and place.',
+  'Har scene ke prompt ka pehla hissa ek hi character block ho. Sirf action aur jagah badlo.',
+  '[CHARACTER BLOCK] + new action and new location, same outfit, same colours, same proportions.']
+];
+var fixesEl=$('#fixes');
+FIXES.forEach(function(f,i){
+  fixesEl.append(h('details',i===0?{open:'open'}:{},
+    h('summary',{},bi(f[0],f[1])),
+    h('p',{},bi(f[2],f[3])),
+    h('div',{class:'fixp',text:f[4]}),
+    h('button',{class:'btn alt',type:'button',onclick:function(){copyText(f[4]);}},bi('Copy fix prompt','Fix prompt copy karo'))
+  ));
+});
+
+/* ---------- tutorials ---------- */
+var LV=[['Beginner','Shuru walay'],['Intermediate','Darmiyana'],['Advanced','Mahir']];
+function TU(app,lvl,pro,en,ur,steps){return {app:app,lvl:lvl,pro:pro,en:en,ur:ur,steps:steps.map(function(x){var p=x.split(' || ');return [p[0],p[1]];})};}
+var TUTS=[
+ TU('capcut',0,false,'Add auto captions','Auto captions lagao',[
+  'Import your video and tap it on the timeline. || Video import karo aur timeline par usay select karo.',
+  'Tap Text, then Auto captions. || Text dabao, phir Auto captions.',
+  'Pick the spoken language and tap Generate. || Bolne wali zaban chuno aur Generate dabao.',
+  'Open the caption track and fix any wrong words. || Caption track kholo aur ghalat lafz theek karo.',
+  'Choose a bold font, a colour and an animation, then apply the style to all captions. || Mota font, rang aur animation chuno, phir style sab captions par lagao.']),
+ TU('capcut',0,true,'Remove a background','Background hataao',[
+  'Select your clip or photo on the timeline. || Timeline par apni clip ya photo select karo.',
+  'Tap Cutout (or Remove BG) in the bottom toolbar. || Neeche toolbar me Cutout (ya Remove BG) dabao.',
+  'Choose Auto removal and wait for the result. || Auto removal chuno aur result ka intezar karo.',
+  'Use the custom cutout brush to fix any missed parts. || Jo hissa reh jaye usay custom cutout brush se theek karo.',
+  'Add a new background underneath using Overlay or a stock background. || Neeche Overlay ya stock background se naya background lagao.']),
+ TU('capcut',1,false,'Animate with keyframes','Keyframes se animation',[
+  'Select the clip and move the playhead to where the motion should start. || Clip select karo aur playhead wahan rakho jahan se movement shuru ho.',
+  'Tap the diamond (Keyframe) button. || Diamond (Keyframe) button dabao.',
+  'Move the playhead forward and change position, scale or rotation. || Playhead aage karo aur position, scale ya rotation badlo.',
+  'CapCut adds the second keyframe automatically. || CapCut dosra keyframe khud laga deta hai.',
+  'Play the preview and drag the diamonds to adjust timing. || Preview chalao aur diamonds ko drag karke timing theek karo.']),
+ TU('capcut',1,false,'Speed curve and slow motion','Speed curve aur slow motion',[
+  'Select the clip and tap Speed. || Clip select karo aur Speed dabao.',
+  'Tap Curve. || Curve dabao.',
+  'Choose a preset such as Montage, Hero or Bullet, or tap Custom. || Montage, Hero ya Bullet jaisa preset chuno, ya Custom dabao.',
+  'Drag points down for slow motion and up for fast. || Slow motion ke liye points neeche aur fast ke liye upar drag karo.',
+  'Match the fast and slow parts to your music beat. || Fast aur slow hisson ko music ki beat ke saath milao.']),
+ TU('capcut',1,false,'Green screen (chroma key)','Green screen (chroma key)',[
+  'Add the green-screen clip as an Overlay on top of the background. || Green-screen clip ko background ke upar Overlay ki tarah lagao.',
+  'Select it and tap Cutout, then Chroma key. || Usay select karo aur Cutout, phir Chroma key dabao.',
+  'Use the colour picker and tap the green area. || Colour picker se green hissay par tap karo.',
+  'Raise Intensity until the green disappears. || Intensity barhao jab tak green khatam na ho.',
+  'Raise Shadow slightly to clean the edges. || Kinaron ko saaf karne ke liye Shadow thora barhao.']),
+ TU('capcut',0,false,'Add transitions','Transitions lagao',[
+  'Place two clips next to each other. || Do clips ek doosre ke saath rakho.',
+  'Tap the small white square between them. || Un ke darmiyan chhota safed square dabao.',
+  'Pick a transition category and choose one. || Transition ki category chuno aur ek select karo.',
+  'Set the duration. 0.3 to 0.6 seconds looks clean. || Duration set karo. 0.3 se 0.6 second saaf lagta hai.',
+  'Tap Apply to all only if you want the same transition everywhere. || Apply to all tabhi dabao jab har jagah wahi transition chahiye.']),
+ TU('capcut',1,false,'Cut on the beat','Beat par cut lagao',[
+  'Add your music track. || Apna music track lagao.',
+  'Select the audio and tap Beats. || Audio select karo aur Beats dabao.',
+  'Turn on Auto beats and pick a beat style. || Auto beats on karo aur beat style chuno.',
+  'Markers appear on the audio track. || Audio track par markers aa jayenge.',
+  'Trim each clip so the cuts land on the markers. || Har clip ko aise trim karo ke cut markers par aaye.']),
+ TU('capcut',2,false,'Mask and reveal effect','Mask aur reveal effect',[
+  'Select the clip and tap Mask. || Clip select karo aur Mask dabao.',
+  'Choose a shape such as Linear, Mirror, Circle or Heart. || Linear, Mirror, Circle ya Heart jaisi shape chuno.',
+  'Drag to place it and use Feather to soften the edge. || Drag karke jagah set karo aur Feather se kinara naram karo.',
+  'Add keyframes to move the mask for a reveal. || Reveal ke liye mask ko keyframes se hilao.',
+  'Use Invert to flip which side is visible. || Invert se dikhne wali taraf ulta do.']),
+ TU('capcut',0,false,'Overlay and picture-in-picture','Overlay aur picture-in-picture',[
+  'Tap Overlay, then Add overlay. || Overlay, phir Add overlay dabao.',
+  'Pick a video or photo from your gallery. || Gallery se video ya photo chuno.',
+  'Pinch to resize and drag to position it. || Ungliyon se bara chhota karo aur drag karke jagah do.',
+  'Tap Blend or Opacity to mix it with the clip below. || Neeche wali clip se milane ke liye Blend ya Opacity dabao.',
+  'Use Animations to bring it in smoothly. || Animations se usay naram andaz me lao.']),
+ TU('capcut',0,false,'Freeze frame and reverse','Freeze frame aur reverse',[
+  'Move the playhead to the frame you want to hold. || Playhead usi frame par rakho jo rokna hai.',
+  'Select the clip and tap Freeze. || Clip select karo aur Freeze dabao.',
+  'Drag the end of the freeze to set how long it stays. || Freeze ka kinara drag karke dorania set karo.',
+  'To play backward, select a clip and tap Reverse. || Ulta chalane ke liye clip select karo aur Reverse dabao.',
+  'Combine with a quick transition for a punchy effect. || Tez transition ke saath mila kar zordaar effect banao.']),
+ TU('capcut',1,false,'Colour correction and filters','Colour correction aur filters',[
+  'Select the clip and tap Adjust. || Clip select karo aur Adjust dabao.',
+  'Change Brightness, Contrast and Saturation little by little. || Brightness, Contrast aur Saturation thora thora badlo.',
+  'Use Temperature and Tint to fix warm or cool tones. || Garam ya thandi tone theek karne ke liye Temperature aur Tint use karo.',
+  'Add a Filter and lower its strength to about 50%. || Filter lagao aur uski strength 50% ke qareeb karo.',
+  'Tap Apply to all so every clip matches. || Apply to all dabao taake sab clips ek jaisi lagein.']),
+ TU('capcut',0,false,'Clean voice and voice effects','Saaf awaaz aur voice effects',[
+  'Select the clip that has the voice. || Jis clip me awaaz hai usay select karo.',
+  'Open Audio and turn on Reduce noise. || Audio kholo aur Reduce noise on karo.',
+  'Tap Voice effects and pick one you like. || Voice effects dabao aur pasand ka ek chuno.',
+  'Lower the music volume so the voice stays clear. || Music ki awaaz kam karo taake awaaz saaf rahe.',
+  'Check the result with headphones. || Headphones se result check karo.']),
+ TU('capcut',0,false,'Best export settings','Behtareen export settings',[
+  'Before editing, set the aspect ratio: 9:16 for Reels, TikTok and Shorts, 16:9 for YouTube. || Editing se pehle ratio set karo: Reels, TikTok, Shorts ke liye 9:16, YouTube ke liye 16:9.',
+  'Tap Export in the top-right corner. || Upar daayen kone me Export dabao.',
+  'Choose 1080p resolution. || 1080p resolution chuno.',
+  'Choose 30 fps, or 60 fps for fast motion. || 30 fps chuno, ya tez movement ke liye 60 fps.',
+  'Keep bitrate on Recommended, then export. || Bitrate Recommended par rakho, phir export karo.']),
+
+ TU('canva',0,false,'Start from a template','Template se shuru karo',[
+  'Open Canva and search a design type such as Instagram Post. || Canva kholo aur Instagram Post jaisi design type search karo.',
+  'Browse templates and click one to open it. || Templates dekho aur ek par click karke kholo.',
+  'Click text to edit it, and drag your photo over a template photo to replace it. || Text par click karke badlo, aur apni photo template ki photo par drag karke badlo.',
+  'Change colours from the colour tile in the top toolbar. || Upar toolbar ke colour tile se rang badlo.',
+  'Click Share, then Download, and choose PNG or JPG. || Share, phir Download dabao aur PNG ya JPG chuno.']),
+ TU('canva',0,true,'Remove a photo background','Photo ka background hataao',[
+  'Upload your photo and add it to the page. || Apni photo upload karo aur page par lagao.',
+  'Select it and click Edit photo. || Usay select karo aur Edit photo dabao.',
+  'Choose BG Remover. || BG Remover chuno.',
+  'Use Erase and Restore to fix the edges. || Kinare theek karne ke liye Erase aur Restore use karo.',
+  'Place a new background behind it. || Us ke peeche naya background lagao.']),
+ TU('canva',1,true,'Magic Resize for every platform','Har platform ke liye Magic Resize',[
+  'Open your finished design. || Apna mukammal design kholo.',
+  'Click Resize and Magic Switch at the top. || Upar Resize and Magic Switch dabao.',
+  'Choose sizes like Story, Post or Thumbnail. || Story, Post ya Thumbnail jaisi sizes chuno.',
+  'Pick Copy and resize. || Copy and resize chuno.',
+  'Check each copy and move text if needed. || Har copy dekho aur zaroorat ho to text hilao.']),
+ TU('canva',0,false,'Stylish text effects','Khoobsurat text effects',[
+  'Click the text. || Text par click karo.',
+  'Click Effects in the top toolbar. || Upar toolbar me Effects dabao.',
+  'Try Shadow, Lift, Hollow, Splice, Echo or Neon. || Shadow, Lift, Hollow, Splice, Echo ya Neon try karo.',
+  'Adjust the sliders and keep the text readable. || Sliders set karo aur text parhne layak rakho.',
+  'Pair it with a bold font from the font list. || Font list se mota font saath lagao.']),
+ TU('canva',1,true,'Set up a Brand Kit','Brand Kit banao',[
+  'Open Brand from the left menu. || Left menu se Brand kholo.',
+  'Upload your logos and add your brand colours. || Apne logos upload karo aur brand ke rang daalo.',
+  'Add your fonts and set heading and body styles. || Apne fonts daalo aur heading aur body ke styles set karo.',
+  'Open any design and apply your brand colours and fonts. || Koi bhi design kholo aur brand ke rang aur fonts lagao.',
+  'Use the same kit for every post to stay consistent. || Har post me wahi kit use karo taake ek jaisa look rahe.']),
+ TU('canva',0,false,'Animate a design','Design ko animate karo',[
+  'Select a page or an element. || Page ya element select karo.',
+  'Click Animate. || Animate dabao.',
+  'Pick a page animation, or an element animation like Rise, Pop or Fade. || Page animation ya Rise, Pop, Fade jaisi element animation chuno.',
+  'Set the speed or direction. || Raftar ya direction set karo.',
+  'Download as MP4 Video or GIF. || MP4 Video ya GIF ki tarah download karo.']),
+ TU('canva',0,false,'Frames and grids','Frames aur grids',[
+  'Open Elements and search Frames or Grids. || Elements kholo aur Frames ya Grids search karo.',
+  'Click one to add it to the page. || Ek par click karke page par lagao.',
+  'Drag your photo into the frame. || Apni photo frame me drag karo.',
+  'Double-click the photo to reposition or zoom inside. || Photo par double-click karke andar jagah ya zoom set karo.',
+  'Use circle or rounded frames for profile pictures. || Profile picture ke liye circle ya rounded frame use karo.']),
+ TU('canva',0,false,'Photo adjust and filters','Photo adjust aur filters',[
+  'Click your photo, then Edit photo. || Apni photo par click karo, phir Edit photo.',
+  'Open Adjust and set brightness, contrast and saturation. || Adjust kholo aur brightness, contrast aur saturation set karo.',
+  'Try a filter and lower its strength. || Filter try karo aur uski strength kam karo.',
+  'Try Duotone for a stylish colour look. || Khoobsurat rang ke liye Duotone try karo.',
+  'Click Done and compare with the original. || Done dabao aur asal photo se muqabla karo.']),
+ TU('canva',1,false,'Video basics: trim, split, music','Video basics: trim, split, music',[
+  'Upload your video and drag it onto a page. || Apni video upload karo aur page par drag karo.',
+  'Click the video and use the trim handles to cut the start and end. || Video par click karo aur trim handles se shuru aur akhir kaato.',
+  'Move the playhead and click Split to cut in the middle. || Playhead hilao aur beech me kaatne ke liye Split dabao.',
+  'Open Audio to add music and set its volume. || Audio kholo, music lagao aur uski awaaz set karo.',
+  'Click Share, Download and choose MP4. || Share, Download dabao aur MP4 chuno.']),
+ TU('canva',1,true,'Download a transparent PNG','Transparent PNG download karo',[
+  'Finish your design, such as a logo, sticker or text. || Apna design mukammal karo, jaise logo, sticker ya text.',
+  'Click Share, then Download. || Share, phir Download dabao.',
+  'Choose file type PNG. || File type PNG chuno.',
+  'Tick Transparent background. || Transparent background par tick lagao.',
+  'Click Download. || Download dabao.']),
+ TU('canva',0,false,'Make a YouTube thumbnail','YouTube thumbnail banao',[
+  'Create a design and choose YouTube Thumbnail (1280 x 720). || Design banao aur YouTube Thumbnail (1280 x 720) chuno.',
+  'Place a close-up face on one side. || Ek taraf chehre ki close-up photo lagao.',
+  'Use 3 to 4 big words with high contrast. || 3 se 4 bare lafz zyada contrast ke saath likho.',
+  'Add an outline or shadow to the text and use a bright background. || Text par outline ya shadow lagao aur roshan background rakho.',
+  'Download as JPG or PNG under 2 MB. || 2 MB se kam ki JPG ya PNG download karo.']),
+ TU('canva',0,false,'Share and collaborate','Share karo aur mil kar kaam karo',[
+  'Click Share. || Share dabao.',
+  'Add emails, or open the link settings. || Email daalo, ya link settings kholo.',
+  'Choose Can view or Can edit. || Can view ya Can edit chuno.',
+  'Copy the link and send it. || Link copy karke bhej do.',
+  'Use comments to review changes together. || Comments se mil kar tabdeeliyan dekho.']),
+ TU('canva',1,false,'Layers, align and group','Layers, align aur group',[
+  'Click an element, then Position. || Element par click karo, phir Position.',
+  'Use Arrange to move it forward or back. || Arrange se usay aage ya peeche karo.',
+  'Use Align to centre items on the page. || Align se cheezein page ke beech me lao.',
+  'Select several items and press Ctrl+G (Cmd+G on Mac) to group. || Kai cheezein select karo aur group ke liye Ctrl+G (Mac par Cmd+G) dabao.',
+  'Lock an element so it does not move by accident. || Element lock karo taake ghalti se na hile.']),
+ TU('canva',1,false,'Instagram carousel','Instagram carousel',[
+  'Create an Instagram Post design. || Instagram Post design banao.',
+  'Design the first slide with a bold hook headline. || Pehli slide par zordaar hook headline likho.',
+  'Duplicate the page and change the content for each slide. || Page duplicate karo aur har slide ka content badlo.',
+  'Keep fonts and colours identical on every slide. || Har slide par font aur rang ek jaise rakho.',
+  'Download all pages as PNG. || Tamam pages PNG me download karo.'])
+];
+var tut={app:'all',q:''};
+function renderTuts(){
+  var el=$('#tutlist');el.textContent='';
+  var q=tut.q.trim().toLowerCase(),n=0;
+  TUTS.forEach(function(t){
+    if(tut.app!=='all'&&t.app!==tut.app)return;
+    if(q&&(t.en+' '+t.ur+' '+t.app).toLowerCase().indexOf(q)===-1)return;
+    var steps=h('ol',{class:'steps'});
+    t.steps.forEach(function(p){steps.append(h('li',{},bi(p[0],p[1])));});
+    el.append(h('details',n===0?{open:'open'}:{},
+      h('summary',{},
+        bi(t.en,t.ur),
+        h('span',{class:'badge',text:t.app==='capcut'?'CapCut':'Canva'}),
+        h('span',{class:'badge'},bi(LV[t.lvl][0],LV[t.lvl][1])),
+        t.pro?h('span',{class:'badge pro',text:'Pro'}):null
+      ),
+      steps));
+    n++;
+  });
+  if(!n)el.append(h('p',{class:'sub'},bi('No tutorials found.','Koi tutorial nahi mila.')));
+}
+(function(){
+  var tc=$('#tchips'),opts=[['all','All','Sab'],['capcut','CapCut','CapCut'],['canva','Canva','Canva']];
+  opts.forEach(function(o){
+    tc.append(h('button',{class:'chip',type:'button','aria-pressed':String(o[0]===tut.app),onclick:function(){
+      tut.app=o[0];
+      Array.prototype.forEach.call(tc.children,function(x,k){x.setAttribute('aria-pressed',String(opts[k][0]===tut.app));});
+      renderTuts();
+    }},bi(o[1],o[2])));
+  });
+  var tT=0;
+  $('#tq').addEventListener('input',function(e){
+    var v=String(e.target.value).slice(0,60);clearTimeout(tT);tT=setTimeout(function(){tut.q=v;renderTuts();},160);
+  });
+  renderTuts();
+})();
+
+/* ---------- ideas ---------- */
+var IDEA={
+  hero:[['A little bear','Ek chhota bhaloo'],['A magical tea seller','Ek jadui chai wala'],['A brave cat','Ek bahadur billi'],['A robot cricketer','Ek robot cricketer'],['A cloud-whispering girl','Badlon se baat karne wali ladki'],['A grandfather and his grandkids','Ek dada aur unke potay'],['A fearful baby dragon','Ek darpok chhota dragon'],['A magical sweet-maker genie','Ek jadui mithai wala jinn'],['A poor little traveller','Ek ghareeb chhota musafir'],['A talking camel','Ek bolta hua ooont']],
+  world:[['in the valleys of Hunza','Hunza ki wadiyon me'],['in the lanes of old Lahore','purane Lahore ki galiyon me'],['on a trip to the moon','chaand ki sair par'],['under the sea','samandar ke neeche'],['in a bazaar that wakes up at night','ek aise bazaar me jo raat ko jaagta hai'],['in a city of clouds','badlon ke shehar me'],['inside a forgotten library','ek bhooli hui library me']],
+  twist:[['who has lost their voice','jo apni awaaz kho chuka hai'],['who is searching for the reward of honesty','jo imandari ka inaam dhoondta hai'],['who teaches everyone patience','jo sab ko sabr sikhata hai'],['who is hiding a big secret','jo ek bara raaz chhupaye hai'],['who learns what friendship means','jo dosti ka matlab seekhta hai'],['who accidentally breaks a magic object','jo galti se ek jadui cheez tor deta hai']],
+  moral:[['Honesty is always better.','Sach bolna hamesha behtar hai.'],['Friends help in hard times.','Mushkil waqt me dost kaam aate hain.'],['Patience brings sweet rewards.','Sabr ka phal meetha hota hai.'],['Even a small good deed is big.','Choti neki bhi bari hoti hai.'],['Hard work is never wasted.','Mehnat kabhi zaya nahi jati.']],
+  tip:[['Make 5 to 8 minute episodes.','5 se 8 minute ke episodes banao.'],['End each episode with a question.','Har episode ke aakhir me ek sawal pucho.'],['Put the character\'s big face on the thumbnail.','Thumbnail me character ka bara chehra rakho.'],['Add a hook in the first 3 seconds.','Pehle 3 second me hook daalo.'],['Keep a fixed upload day for the series.','Series ke liye upload ka ek din tay rakho.']]
+};
+function renderIdeas(){
+  var el=$('#ideas');el.textContent='';
+  for(var n=0;n<12;n++){
+    var a=IDEA.hero[rnd(IDEA.hero)],b=IDEA.world[rnd(IDEA.world)],c=IDEA.twist[rnd(IDEA.twist)],m=IDEA.moral[rnd(IDEA.moral)],t=IDEA.tip[rnd(IDEA.tip)];
+    el.append(ideaCard(a[0]+' '+b[0]+', '+c[0]+'.',a[1]+' '+b[1]+', '+c[1]+'.',m,t));
+  }
+}
+function ideaCard(en,ur,m,t){
+  var full=en+'\nMoral: '+m[0]+'\nTip: '+t[0];
+  return h('article',{class:'card idea'},
+    h('h3',{},bi(en,ur)),
+    h('p',{},bi('Moral: '+m[0],'Sabaq: '+m[1])),
+    h('p',{},bi('Tip: '+t[0],'Tip: '+t[1])),
+    h('button',{class:'btn alt',type:'button',onclick:function(){copyText(full);}},bi('Copy','Copy karo')));
+}
+$('#newideas').addEventListener('click',function(){renderIdeas();toast('New ideas','Naye ideas aa gaye');});
+renderIdeas();
+
+/* ---------- settings screen ---------- */
+function group(en,ur){return h('div',{class:'sgroup'},h('p',{class:'lbl'},bi(en,ur)));}
+function optGroup(key,en,ur,opts,after){
+  var g=group(en,ur),box=h('div',{class:'opts'});
+  opts.forEach(function(o){
+    box.append(h('button',{class:'chip',type:'button','data-v':String(o[0]),'aria-pressed':String(String(SET[key])===String(o[0])),onclick:function(){
+      SET[key]=(typeof DEFAULTS[key]==='number')?Number(o[0]):o[0];
+      saveSettings();applySettings();
+      Array.prototype.forEach.call(box.children,function(x){x.setAttribute('aria-pressed',String(x.getAttribute('data-v')===String(SET[key])));});
+      if(after)after();
+    }},bi(o[1],o[2])));
+  });
+  g.append(box);return g;
+}
+function confirmBtn(en,ur,enSure,urSure,fn){
+  var timer=0,armed=false,btn=h('button',{class:'btn alt',type:'button'},bi(en,ur));
+  btn.addEventListener('click',function(){
+    if(!armed){
+      armed=true;btn.textContent='';btn.append(bi(enSure,urSure));
+      timer=setTimeout(function(){armed=false;btn.textContent='';btn.append(bi(en,ur));},3500);
+    }else{
+      clearTimeout(timer);armed=false;btn.textContent='';btn.append(bi(en,ur));fn();
+    }
+  });
+  return btn;
+}
+function renderSettings(){
+  var el=$('#settings');el.textContent='';
+  el.append(optGroup('mode','Appearance','Zaahiri shakal',[['auto','Auto','Khud'],['light','Light','Roshan'],['dark','Dark','Andhera']]));
+  var tg=group('Theme colour','Theme ka rang'),sw=h('div',{class:'swatches'});
+  Object.keys(THEMES).forEach(function(k){
+    var t=THEMES[k];
+    sw.append(h('button',{class:'sw',type:'button','aria-label':t.n[0],'data-v':k,'aria-pressed':String(SET.theme===k),onclick:function(){
+      SET.theme=k;saveSettings();applySettings();
+      Array.prototype.forEach.call(sw.children,function(x){x.setAttribute('aria-pressed',String(x.getAttribute('data-v')===SET.theme));});
+    }},h('i',{style:'background:linear-gradient(135deg,'+t.h1+','+t.a+' 55%,'+t.a2+')'}),bi(t.n[0],t.n[1])));
+  });
+  tg.append(sw);el.append(tg);
+  el.append(optGroup('size','Text size','Text ka size',[['small','Small','Chhota'],['normal','Normal','Darmiyana'],['large','Large','Bara']]));
+  el.append(optGroup('ur','Roman Urdu helper text','Roman Urdu ki madad',[['on','Show','Dikhao'],['off','Hide','Chhupao']]));
+  el.append(optGroup('ps','Prompts per page','Har page par prompts',[[12,'12','12'],[24,'24','24'],[48,'48','48']],function(){refreshList();}));
+  el.append(optGroup('previews','Design previews','Design preview',[['on','Show','Dikhao'],['off','Hide (faster)','Chhupao (tez)']]));
+
+
+  var dg=group('Your data','Aap ka data'),db=h('div',{class:'opts'});
+  db.append(confirmBtn('Clear saved prompts','Save kiye prompts mitao','Tap again to confirm','Pakka karne ke liye dobara dabao',function(){
+    favs.length=0;store.set('rao_favs',favs);toast('Saved prompts cleared','Save kiye prompts mit gaye');
+  }));
+  db.append(confirmBtn('Reset all settings','Sab settings dobara default karo','Tap again to confirm','Pakka karne ke liye dobara dabao',function(){
+    Object.keys(DEFAULTS).forEach(function(k){SET[k]=DEFAULTS[k];});
+    store.del('rao_settings');applySettings();renderSettings();refreshList();toast('Settings reset','Settings default ho gayi');
+  }));
+  dg.append(db);el.append(dg);
+
+  el.append(h('p',{class:'sub'},bi('RAO EDITS v2. Your settings and saved prompts stay only on this device.','RAO EDITS v2. Aap ki settings aur save kiye prompts sirf isi device par rehte hain.')));
+}
+renderSettings();
+
+/* ---------- tabs ---------- */
+var TABS=[['prompts','Prompts','Prompts'],['cartoon','Cartoon Lab','Cartoon Lab'],['tuts','Tutorials','Tutorials'],['ideas','Ideas','Ideas'],['favs','Saved','Pasandeeda'],['settings','Settings','Settings']];
+var tabsEl=$('#tabs');
+function openTab(id){
+  TABS.forEach(function(t,i){
+    var on=t[0]===id;
+    $('#tab-'+t[0]).hidden=!on;
+    tabsEl.children[i].setAttribute('aria-selected',String(on));
+    tabsEl.children[i].setAttribute('tabindex',on?'0':'-1');
+  });
+  if(id==='favs')renderFavs();
+}
+TABS.forEach(function(t){
+  tabsEl.append(h('button',{type:'button',role:'tab',onclick:function(){openTab(t[0]);}},bi(t[1],t[2])));
+});
+applySettings();
+openTab('prompts');
+})();
+</script>
+
+</body></html>
